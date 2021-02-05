@@ -1,2 +1,2 @@
-"# machine-lerning" 
-# machine-lerning
+"# machine-learning" 
+# machine-learning
