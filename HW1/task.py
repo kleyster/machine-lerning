@@ -15,9 +15,10 @@ for i in range(len(sentences)):
 
 
 words = []
-
+word=[]
 for i in sentences:
 	for j in i:
+		word.append(j)
 		if j not in words:
 			words.append(j)
 
@@ -33,9 +34,11 @@ for i,j in enumerate(sentences):
 	for z in dictionary:
 		mtrx[i][dictionary[z]] = j.count(z)
 
+
 def cos_d(x,y):
 	return 1-x@y/(np.sqrt(x@x)*np.sqrt(y@y))
 
 mtrx.shape
 d = np.array([cos_d(mtrx[0],mtrx[i]) for i in range(1,mtrx.shape[0])])
-print(d)
+
+w()
